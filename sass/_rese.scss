@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    border: none;
+    outline:none;
+    text-decoration: none;
+    list-style: none;
+    font-family:$font-lato;
+}
+html {
+    font-size: 62%;
+    @include resp(1200px){
+        font-size:55%;
+    }
+    body{
+        background-color: blue;
+        h1 {
+            font-family:$font-PT;
+            font-size:4.8rem ;
+            font-weight:bold;
+            line-height: 120%;
+            color: $cor5;
+
+        }
+        h2 {
+            font-family:$font-PT;
+            font-size:3.8rem ;
+            font-weight:bold;
+            line-height: 120%;
+        }
+    }    
+
+}
+

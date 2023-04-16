@@ -1,0 +1,38 @@
+@mixin resp($MS) {
+    @media(max-width:$MS) {
+        @content; 
+    } 
+}
+
+@mixin Dim($altura , $largura) {
+    height: $altura;
+    width: $largura;
+}
+
+@mixin flex($justify, $direction, $align) {
+    display: flex;
+    justify-content:$justify;
+    flex-direction:$direction;
+    align-items: $align;
+}
+
+@mixin botão($H,$corback,$corf,$cb-hou,$cf-hou) {
+    display: inline-block;
+    background-color: $corback;
+    box-sizing:content-box;
+    color: $corf;
+    border: solid $cor2 3px;
+    height: $H;
+    line-height: $H;
+    padding:0 10rem ;
+    font-weight: bold;
+    font-size: 2.6rem;
+    border-radius: 16px;
+    transition: all, .5s ;
+    cursor: pointer;
+    &:hover {
+        background-color: $cb-hou;
+        color: $cf-hou ;
+        box-sizing: content-box;
+    }
+}

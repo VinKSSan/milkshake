@@ -1,0 +1,120 @@
+header {
+    @include resp(600px) {
+        .conteiner {
+            @include flex(center , column , center);
+            .logo {
+                margin-bottom: 2.5rem
+            }
+        }      
+    }
+    @include resp(480px) {
+        .conteiner {
+            max-width: 99%;
+            @include flex(space-between , row , center);
+            nav {
+                @include flex(right , column ,right );
+                ul {
+                    @include flex(right , column ,right );
+                    li {
+                        margin-bottom: 1rem ;
+                    }
+                }
+            }
+            .logo {
+                margin-bottom: 1rem ;
+            }
+        }
+    }
+}
+
+
+.s-1 {
+   @include resp(991px) {
+        #con {
+            flex-direction:column;  
+            .textos {
+                display: flex;
+                flex-direction: column;
+                max-width: 100%;
+                justify-content: center;
+                align-items: center;
+                h1 {
+                    text-align: center;
+                }
+                p {
+                    width: 100%;
+                    max-width: 90%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    @include resp(630px) {
+        #con {
+            .textos {
+                h1 {
+                    font-size: 3.5;
+                }
+            }
+            .img1 {
+                max-width: 90%;
+            }
+        }
+    }
+}
+
+.s2 {
+    @include resp(1200px) {
+        ul {
+            margin-left: 2rem;
+        }
+    }
+    @include resp(1100px) {
+        ul {
+            margin-left: 1rem;
+        }
+    }
+    @include resp(1000px) {
+        #cont {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            #card1 {
+                max-width: 100%;
+                width: 50%;
+                height: 30rem;
+                .icon {
+                    margin-bottom: 2rem;
+                }
+                h4 {
+                    max-width: 100%;
+                    width: 100%;
+                    text-align: center;
+                }
+                p {
+                    max-width: 100%;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            ul {
+                .card {
+                    .info{
+                        margin-bottom: 5rem;
+                        h1 {
+                            font-size: 1.3rem;
+                            width: 80%;
+                            text-align: center;
+                        }
+                        p {
+                            font-size: 1.2rem;
+                            text-align: center;
+                        }
+                        
+                    }                  
+                }
+            }
+        }
+    }
+}
